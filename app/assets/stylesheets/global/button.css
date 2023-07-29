@@ -1,3 +1,4 @@
+/* Buttons base - START */
 .button {
   border: none;
   border-radius: 0.5em;
@@ -26,7 +27,9 @@
   padding: .75em 1.5em;
 }
 
+/* Buttons base - END */
 
+/* Buttons Default - START */
 .button--default {
   background-color: var(--gray-200);
   color: var(--primary-darker);
@@ -50,7 +53,9 @@
   cursor: default;
   background-color: var(--gray-200);
 }
+/* Buttons Default - END */
 
+/* Buttons primary - START */
 .button--primary {
   background-color: var(--primary-dark);
   color: var(--primary-lighter);
@@ -74,7 +79,9 @@
   cursor: default;
   background-color: var(--primary-dark);
 }
+/* Buttons primary - END */
 
+/* Buttons secondary - START */
 .button--secondary {
   background-color: var(--primary-regular);
   color: var(--seconday-darker);
@@ -99,3 +106,4 @@
   cursor: default;
   background-color: var(--primary-light);
 }
+/* Buttons secondary - END */
