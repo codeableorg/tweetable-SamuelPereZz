@@ -1,7 +1,8 @@
 class User < ApplicationRecord
-  has_secure_password
-  before_validation :default_avatar
+  before_create :default_avatar
   has_one_attached :avatar
+  has_secure_password
+  
 
   has_many :tweets, dependent: :destroy
   has_many :likes, dependent: :destroy
