@@ -1,11 +1,10 @@
 class User < ApplicationRecord
   before_create :default_avatar
-  has_one_attached :avatar
   has_secure_password
   
-
+  has_one_attached :avatar
   has_many :tweets, dependent: :destroy
-  has_many :likes, dependent: :destroy, counter_cache: true
+  has_many :likes, dependent: :destroy
   has_many :liked_tweets, through: :likes, source: :tweet
   has_many :replies, class_name: 'Tweet', foreign_key: :reply_to_id, dependent: :nullify
   
