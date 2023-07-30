@@ -17,7 +17,7 @@
             <div class="header-card__data">
             <%= link_to user_path(tweet.user) do  %>
               <span class="text-md text-gray-400 weight-700"><%= tweet.user.name%></span>
-              <span class="text-md text-primary_darker ">@<%= tweet.user.username%></span>
+              <span class="text-md", style="color: #F490B1">@<%= tweet.user.username%></span>
             <% end  %>
             </div>
             <p class="text-sm text-gray-300"><%= time_ago_in_words(tweet.created_at)%> ago</p>

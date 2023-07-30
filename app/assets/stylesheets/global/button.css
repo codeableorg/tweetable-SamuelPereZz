@@ -20,6 +20,7 @@
 .button--sm {
   font-size: .875em;
   padding: .5em .75em;
+  background-color: #757575;
 }
 
 .button--lg {
@@ -57,47 +58,50 @@
 
 /* Buttons primary - START */
 .button--primary {
-  background-color: var(--primary-dark);
+  background-color: #F490B1;
   color: var(--primary-lighter);
 }
 
 .button--primary:hover {
-  background-color: var(--green-700);
+  background-color: #E76A94;
 }
 
 .button--primary:active {
-  background-color: var(--green-800);
+  background-color: #F490B1;
+  border-radius: 10px solid #F490B1;
 }
 
 .button--primary:focus {
-  outline: 2px solid var(--outline-primary);
+  outline: 2px solid #F490B1;
   outline-offset: 1px;
 }
 
 .button--primary:disabled {
   opacity: 0.6;
   cursor: default;
-  background-color: var(--primary-dark);
+  background-color: #E76A94;
 }
 /* Buttons primary - END */
 
 /* Buttons secondary - START */
 .button--secondary {
-  background-color: var(--primary-regular);
-  color: var(--seconday-darker);
+  background-color: #757575;
+  color: white;
 }
 
 .button--secondary:hover {
-  background-color: var(--green-300);
+  background-color: #5C5C5C;
+  color: rgb(170, 167, 167);
 }
 
 .button--secondary:active {
-  background-color: var(--green-500);
-  color: var(--primary-light);
+  background-color: #5C5C5C;
+  color: var(--seconday-darker);
+  border-radius: 10px solid #757575;
 }
 
 .button--secondary:focus {
-  outline: 2px solid var(--outline-primary);
+  outline: 2px solid #757575;
   outline-offset: 1px;
 }
 

@@ -17,8 +17,8 @@
     <% if user_signed_in? %>
       <ul class="navbar__links center expandable gap-1 py-1 px-0">
         <li class="link"><p>Thanks for using Tweetable!</p></li>
-        <li class="link text-primary_darker">
-          <%=link_to "Profile",user_path(current_user)%>
+        <li class="link text-gray-400">
+          <%=link_to "Profile",user_path(current_user), style:"color: #D44A78"%>
         </li>
         <li class="link"><%= button_to "LOG OUT", destroy_user_session_path, class: "button button--sm font-xs bg-gray text-white flex center radius-5 m-0" ,method: :delete, data: { turbo: false }%></li>
       </ul>
