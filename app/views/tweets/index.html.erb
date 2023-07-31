@@ -6,8 +6,6 @@
       <%= render "comment", tweet_new: @tweet_new, replied_to: nil %>
       <% end %>
     </div>
-<h1>index</h1>
-
     <div class="briefcase-summary__content">
       <% @tweets.each do |tweet| %>
         <%= render "shared/tweet", tweet: tweet %>

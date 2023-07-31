@@ -18,7 +18,11 @@
   border-radius: .3rem;
   margin: 0;
   padding: 0.6rem 1rem;
-  align-self: flex-end;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
   background-color: #D44A78;
 }
 
@@ -31,4 +35,15 @@
 
 a{
  text-decoration: none;
+}
+
+.write-tweet {
+  width: 100%; 
+  background-color: transparent; 
+  border: none; 
+  padding: 5px; 
+}
+
+.write-tweet:focus {
+  outline: none;
 }
