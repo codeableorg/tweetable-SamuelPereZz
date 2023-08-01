@@ -1,0 +1,21 @@
+<section class="section-md">
+  <div class="container-lg py-3 flex flex-column gap-1_5">
+    <div class="briefcase-header">
+      <h1 class="heaader__title">Tweets  Detail</h1>
+      <%= render "shared/tweet", tweet: @tweet_got %>
+
+      <% if current_user %>
+        <%= render "comment", tweet_new: @tweet_new, replied_to: @tweet_got %>
+      <% end %>
+    </div>
+
+    <div class="briefcase-summary__content">
+      <% @tweet_got.replies.each do |tweet| %>
+        <%= render "shared/tweet", tweet: tweet %>
+      <% end %>
+    </div>
+  </div>
+</section>
+
+
+<%= render "shared/icons_svg" %>
