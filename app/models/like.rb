@@ -1,4 +1,5 @@
 class Like < ApplicationRecord
+
   # Validations
   validates :user, uniqueness: { scope: :tweet, message: "and tweet combination already taken"}
   # Associations

@@ -1,4 +1,4 @@
-puts "Start seeding"
+puts "seeding data"
 
 puts "Sedding admin and users"
 admin = User.create(name: "admin", username: "adminpro", email: "admin@mail.com", password: "supersecret", password_confirmation: "supersecret")
