@@ -1,0 +1,29 @@
+<section class="section-md">
+  <div class="container-lg py-3 flex flex-column gap-1_5">
+    <div class="briefcase-header flex flex-column center">
+      <h1 class="heaader__title">Profile</h1>
+      <% if @user.avatar.attached? %>
+      <div>
+        <%= image_tag @user.avatar, alt: "Image to #{@user.name}", class: "profile" %>
+      </div>
+      <% else %>
+      <div>
+        <%= image_tag "avatar.png", alt: "Empty image", class: "profile" %>
+      </div>
+      <% end  %>
+      <span class="head-xs semibold text-gray-400"><%= @user.name %></span>
+      <span class="text-md text-gray-300 regular">@<%= @user.username %></span>
+      <span class="text-md text-gray-300 regular">Join <%= @user.created_at.strftime('%B %d, %Y')  %></span>
+      <% if current_user == @user %>
+      <%= button_to "Edit Profile", edit_user_registration_path, method: :get , class: "button button--primary overline button-profile"%>
+      <% end %>
+
+    </div>
+    <div class="briefcase-summary__content">
+      <%= render partial: "shared/tweet", collection: @tweets, as: :tweet %>
+    </div>
+  </div>
+</section>
+
+
+<%= render "shared/icons_svg" %>

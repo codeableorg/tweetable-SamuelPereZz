@@ -1,0 +1,113 @@
+/* Buttons base - START */
+.button {
+  border: none;
+  border-radius: 0.5em;
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+  padding: .75em 1em;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: .5em;
+  line-height: 16px;
+  letter-spacing: 1.25px;
+  margin: 1rem 0;
+}
+
+.button--sm {
+  font-size: .875em;
+  padding: .5em .75em;
+  background-color: #757575;
+}
+
+.button--lg {
+  font-size: 1.2em;
+  padding: .75em 1.5em;
+}
+
+/* Buttons base - END */
+
+/* Buttons Default - START */
+.button--default {
+  background-color: var(--gray-200);
+  color: var(--primary-darker);
+}
+
+.button--default:hover {
+  background-color: var(--gray-300);
+}
+
+.button--default:active {
+  background-color: var(--gray-400);
+}
+
+.button--default:focus {
+  outline: 2px solid var(--outline-primary);
+  outline-offset: 1px;
+}
+
+.button--default:disabled {
+  opacity: 0.6;
+  cursor: default;
+  background-color: var(--gray-200);
+}
+/* Buttons Default - END */
+
+/* Buttons primary - START */
+.button--primary {
+  background-color: #F490B1;
+  color: var(--primary-lighter);
+}
+
+.button--primary:hover {
+  background-color: #E76A94;
+}
+
+.button--primary:active {
+  background-color: #F490B1;
+  border-radius: 10px solid #F490B1;
+}
+
+.button--primary:focus {
+  outline: 2px solid #F490B1;
+  outline-offset: 1px;
+}
+
+.button--primary:disabled {
+  opacity: 0.6;
+  cursor: default;
+  background-color: #E76A94;
+}
+/* Buttons primary - END */
+
+/* Buttons secondary - START */
+.button--secondary {
+  background-color: #757575;
+  color: white;
+}
+
+.button--secondary:hover {
+  background-color: #5C5C5C;
+  color: rgb(170, 167, 167);
+}
+
+.button--secondary:active {
+  background-color: #5C5C5C;
+  color: var(--seconday-darker);
+  border-radius: 10px solid #757575;
+}
+
+.button--secondary:focus {
+  outline: 2px solid #757575;
+  outline-offset: 1px;
+}
+
+.button--secondary:disabled {
+  opacity: 0.6;
+  cursor: default;
+  background-color: var(--primary-light);
+}
+/* Buttons secondary - END */

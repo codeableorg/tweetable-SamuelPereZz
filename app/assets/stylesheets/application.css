@@ -13,3 +13,37 @@
  *= require_tree .
  *= require_self
  */
+ /* Overwrite button's atributes */
+ .button-tweet{
+  border-radius: .3rem;
+  margin: 0;
+  padding: 0.6rem 1rem;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #D44A78;
+}
+
+.button-profile{
+ border-radius: .3rem;
+ margin: 0;
+ align-self: flex-end;
+ font-size: .9rem;
+}
+
+a{
+ text-decoration: none;
+}
+
+.write-tweet {
+  width: 100%; 
+  background-color: transparent; 
+  border: none; 
+  padding: 5px; 
+}
+
+.write-tweet:focus {
+  outline: none;
+}
